@@ -1,0 +1,40 @@
+{
+  "dataset_name": "Healthcare Stroke Prediction Dataset",
+  "source": "Public Healthcare Benchmark / Kaggle Open Health Dataset",
+  "license": "CC0: Public Domain",
+  "file_name": "stroke.csv",
+  "target": "stroke",
+  "positive_label_meaning": "Presence of Stroke Episode",
+  "features": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "ever_married",
+    "work_type",
+    "residence_type",
+    "avg_glucose_level",
+    "bmi",
+    "smoking_status"
+  ],
+  "feature_descriptions": {
+    "gender": "Gender ('Male', 'Female', or 'Other')",
+    "age": "Age in years",
+    "hypertension": "Hypertension (0 = no, 1 = yes)",
+    "heart_disease": "Pre-existing heart disease (0 = no, 1 = yes)",
+    "ever_married": "Marital history ('No' or 'Yes')",
+    "work_type": "Employment category ('children', 'Govt_job', 'Never_worked', 'Private', 'Self-employed')",
+    "residence_type": "Residence setting ('Rural' or 'Urban')",
+    "avg_glucose_level": "Average blood glucose level (mg/dL)",
+    "bmi": "Body Mass Index (kg/m^2)",
+    "smoking_status": "Smoking history ('formerly smoked', 'never smoked', 'smokes', 'Unknown')"
+  },
+  "description": "Clinical and demographic parameters to predict whether a patient is likely to get stroke.",
+  "known_limitations": "Severe class imbalance (approx 4.8% stroke positive rate), typical of real-world stroke epidemiology.",
+  "samples": 5110,
+  "num_features": 10,
+  "class_distribution": {
+    "0": 4861,
+    "1": 249
+  }
+}

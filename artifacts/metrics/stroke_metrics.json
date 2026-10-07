@@ -1,0 +1,486 @@
+{
+  "disease": "stroke",
+  "selected_model": "logistic_regression",
+  "calibration_method": "raw",
+  "brier_improvement": 0.0,
+  "test_metrics_raw": {
+    "accuracy": 0.7387,
+    "precision": 0.1347,
+    "recall": 0.8,
+    "sensitivity": 0.8,
+    "specificity": 0.7356,
+    "f1": 0.2305,
+    "roc_auc": 0.8393,
+    "pr_auc": 0.2591,
+    "brier_score": 0.1726,
+    "confusion_matrix": {
+      "tn": 715,
+      "fp": 257,
+      "fn": 10,
+      "tp": 40
+    },
+    "calibration_curve": [
+      {
+        "expected": 0.05336098331412788,
+        "observed": 0.005089058524173028
+      },
+      {
+        "expected": 0.17814798448488461,
+        "observed": 0.03571428571428571
+      },
+      {
+        "expected": 0.3113392483025737,
+        "observed": 0.009523809523809525
+      },
+      {
+        "expected": 0.44462031009612213,
+        "observed": 0.022988505747126436
+      },
+      {
+        "expected": 0.5632694289416159,
+        "observed": 0.022727272727272728
+      },
+      {
+        "expected": 0.6943852266623436,
+        "observed": 0.08064516129032258
+      },
+      {
+        "expected": 0.8109031759875999,
+        "observed": 0.20588235294117646
+      },
+      {
+        "expected": 0.9104146842254964,
+        "observed": 0.26666666666666666
+      }
+    ],
+    "cv_performance": {
+      "mean_recall": 0.8190999999999999,
+      "mean_roc_auc": 0.8389000000000001,
+      "mean_f1": 0.23681999999999997
+    },
+    "selection_score": 0.7026
+  },
+  "test_metrics_calibrated": {
+    "accuracy": 0.7387,
+    "precision": 0.1347,
+    "recall": 0.8,
+    "sensitivity": 0.8,
+    "specificity": 0.7356,
+    "f1": 0.2305,
+    "roc_auc": 0.8393,
+    "pr_auc": 0.2591,
+    "brier_score": 0.1726,
+    "confusion_matrix": {
+      "tn": 715,
+      "fp": 257,
+      "fn": 10,
+      "tp": 40
+    },
+    "calibration_curve": [
+      {
+        "expected": 0.05336098331412788,
+        "observed": 0.005089058524173028
+      },
+      {
+        "expected": 0.17814798448488461,
+        "observed": 0.03571428571428571
+      },
+      {
+        "expected": 0.3113392483025737,
+        "observed": 0.009523809523809525
+      },
+      {
+        "expected": 0.44462031009612213,
+        "observed": 0.022988505747126436
+      },
+      {
+        "expected": 0.5632694289416159,
+        "observed": 0.022727272727272728
+      },
+      {
+        "expected": 0.6943852266623436,
+        "observed": 0.08064516129032258
+      },
+      {
+        "expected": 0.8109031759875999,
+        "observed": 0.20588235294117646
+      },
+      {
+        "expected": 0.9104146842254964,
+        "observed": 0.26666666666666666
+      }
+    ]
+  },
+  "all_models_comparison": {
+    "logistic_regression": {
+      "accuracy": 0.7387,
+      "precision": 0.1347,
+      "recall": 0.8,
+      "sensitivity": 0.8,
+      "specificity": 0.7356,
+      "f1": 0.2305,
+      "roc_auc": 0.8393,
+      "pr_auc": 0.2591,
+      "brier_score": 0.1726,
+      "confusion_matrix": {
+        "tn": 715,
+        "fp": 257,
+        "fn": 10,
+        "tp": 40
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.05336098331412788,
+          "observed": 0.005089058524173028
+        },
+        {
+          "expected": 0.17814798448488461,
+          "observed": 0.03571428571428571
+        },
+        {
+          "expected": 0.3113392483025737,
+          "observed": 0.009523809523809525
+        },
+        {
+          "expected": 0.44462031009612213,
+          "observed": 0.022988505747126436
+        },
+        {
+          "expected": 0.5632694289416159,
+          "observed": 0.022727272727272728
+        },
+        {
+          "expected": 0.6943852266623436,
+          "observed": 0.08064516129032258
+        },
+        {
+          "expected": 0.8109031759875999,
+          "observed": 0.20588235294117646
+        },
+        {
+          "expected": 0.9104146842254964,
+          "observed": 0.26666666666666666
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.8190999999999999,
+        "mean_roc_auc": 0.8389000000000001,
+        "mean_f1": 0.23681999999999997
+      },
+      "selection_score": 0.7026
+    },
+    "decision_tree": {
+      "accuracy": 0.7387,
+      "precision": 0.1322,
+      "recall": 0.78,
+      "sensitivity": 0.78,
+      "specificity": 0.7366,
+      "f1": 0.2261,
+      "roc_auc": 0.7986,
+      "pr_auc": 0.1784,
+      "brier_score": 0.1812,
+      "confusion_matrix": {
+        "tn": 716,
+        "fp": 256,
+        "fn": 11,
+        "tp": 39
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.008390329790548984,
+          "observed": 0.015817223198594025
+        },
+        {
+          "expected": 0.29363341137376325,
+          "observed": 0.1111111111111111
+        },
+        {
+          "expected": 0.42283620472806116,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.6659703178539608,
+          "observed": 0.07272727272727272
+        },
+        {
+          "expected": 0.8108748728002267,
+          "observed": 0.17032967032967034
+        },
+        {
+          "expected": 0.9750470219435736,
+          "observed": 0.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.72424,
+        "mean_roc_auc": 0.7632,
+        "mean_f1": 0.2023
+      },
+      "selection_score": 0.6796
+    },
+    "random_forest": {
+      "accuracy": 0.7114,
+      "precision": 0.1231,
+      "recall": 0.8,
+      "sensitivity": 0.8,
+      "specificity": 0.7068,
+      "f1": 0.2133,
+      "roc_auc": 0.818,
+      "pr_auc": 0.2048,
+      "brier_score": 0.1535,
+      "confusion_matrix": {
+        "tn": 687,
+        "fp": 285,
+        "fn": 10,
+        "tp": 40
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.05257449073452407,
+          "observed": 0.003389830508474576
+        },
+        {
+          "expected": 0.19488578499596224,
+          "observed": 0.03111111111111111
+        },
+        {
+          "expected": 0.3045244003212143,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.4440129430040964,
+          "observed": 0.016260162601626018
+        },
+        {
+          "expected": 0.5632684075646434,
+          "observed": 0.08762886597938144
+        },
+        {
+          "expected": 0.6745742208924326,
+          "observed": 0.16666666666666666
+        },
+        {
+          "expected": 0.7805680177126828,
+          "observed": 0.21739130434782608
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.7891,
+        "mean_roc_auc": 0.8190200000000001,
+        "mean_f1": 0.21757999999999997
+      },
+      "selection_score": 0.6936
+    },
+    "gradient_boosting": {
+      "accuracy": 0.9501,
+      "precision": 0.4444,
+      "recall": 0.08,
+      "sensitivity": 0.08,
+      "specificity": 0.9949,
+      "f1": 0.1356,
+      "roc_auc": 0.8055,
+      "pr_auc": 0.1827,
+      "brier_score": 0.0448,
+      "confusion_matrix": {
+        "tn": 967,
+        "fp": 5,
+        "fn": 46,
+        "tp": 4
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.02202614054022176,
+          "observed": 0.033879781420765025
+        },
+        {
+          "expected": 0.17393045116954658,
+          "observed": 0.17142857142857143
+        },
+        {
+          "expected": 0.2983277190003812,
+          "observed": 0.05555555555555555
+        },
+        {
+          "expected": 0.41083695019841693,
+          "observed": 0.2
+        },
+        {
+          "expected": 0.5422054308047858,
+          "observed": 0.4
+        },
+        {
+          "expected": 0.6476864131120302,
+          "observed": 0.6666666666666666
+        },
+        {
+          "expected": 0.8794582038124042,
+          "observed": 0.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.04526,
+        "mean_roc_auc": 0.8266,
+        "mean_f1": 0.0797
+      },
+      "selection_score": 0.4326
+    },
+    "xgboost": {
+      "accuracy": 0.8121,
+      "precision": 0.152,
+      "recall": 0.62,
+      "sensitivity": 0.62,
+      "specificity": 0.822,
+      "f1": 0.2441,
+      "roc_auc": 0.8106,
+      "pr_auc": 0.1746,
+      "brier_score": 0.1197,
+      "confusion_matrix": {
+        "tn": 799,
+        "fp": 173,
+        "fn": 19,
+        "tp": 31
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.01426377534739372,
+          "observed": 0.010657193605683837
+        },
+        {
+          "expected": 0.1884420188034282,
+          "observed": 0.058823529411764705
+        },
+        {
+          "expected": 0.314388530018429,
+          "observed": 0.020833333333333332
+        },
+        {
+          "expected": 0.43824883288628347,
+          "observed": 0.08108108108108109
+        },
+        {
+          "expected": 0.5542974145445105,
+          "observed": 0.0958904109589041
+        },
+        {
+          "expected": 0.6858297638271166,
+          "observed": 0.17391304347826086
+        },
+        {
+          "expected": 0.8100637466299767,
+          "observed": 0.19607843137254902
+        },
+        {
+          "expected": 0.9114553711631082,
+          "observed": 0.18181818181818182
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.58256,
+        "mean_roc_auc": 0.8200600000000001,
+        "mean_f1": 0.2464
+      },
+      "selection_score": 0.6376
+    },
+    "lightgbm": {
+      "accuracy": 0.8268,
+      "precision": 0.1604,
+      "recall": 0.6,
+      "sensitivity": 0.6,
+      "specificity": 0.8385,
+      "f1": 0.2532,
+      "roc_auc": 0.8097,
+      "pr_auc": 0.1741,
+      "brier_score": 0.1162,
+      "confusion_matrix": {
+        "tn": 815,
+        "fp": 157,
+        "fn": 20,
+        "tp": 30
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.01754042825518478,
+          "observed": 0.015306122448979591
+        },
+        {
+          "expected": 0.183683624283063,
+          "observed": 0.011111111111111112
+        },
+        {
+          "expected": 0.3173274322045923,
+          "observed": 0.03896103896103896
+        },
+        {
+          "expected": 0.44028848874822774,
+          "observed": 0.0875
+        },
+        {
+          "expected": 0.5660352233948956,
+          "observed": 0.1111111111111111
+        },
+        {
+          "expected": 0.6861855102923867,
+          "observed": 0.17307692307692307
+        },
+        {
+          "expected": 0.8065177846793619,
+          "observed": 0.19672131147540983
+        },
+        {
+          "expected": 0.9162596646451469,
+          "observed": 0.18181818181818182
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.52256,
+        "mean_roc_auc": 0.8131400000000001,
+        "mean_f1": 0.22996
+      },
+      "selection_score": 0.6324
+    }
+  },
+  "feature_importances": {
+    "num__age": 1.883,
+    "cat__work_type_children": 0.6853,
+    "cat__work_type_Self-employed": 0.4118,
+    "cat__hypertension_0": 0.3991,
+    "cat__smoking_status_never smoked": 0.3123,
+    "cat__hypertension_1": 0.2306,
+    "num__avg_glucose_level": 0.2113,
+    "cat__work_type_Govt_job": 0.211,
+    "cat__smoking_status_smokes": 0.2099,
+    "cat__work_type_Private": 0.1799,
+    "cat__residence_type_Rural": 0.1719,
+    "cat__ever_married_Yes": 0.1688,
+    "cat__heart_disease_0": 0.1571,
+    "cat__gender_Male": 0.1517,
+    "cat__smoking_status_Unknown": 0.0791
+  },
+  "transformed_feature_names": [
+    "num__age",
+    "num__avg_glucose_level",
+    "num__bmi",
+    "cat__gender_Female",
+    "cat__gender_Male",
+    "cat__hypertension_0",
+    "cat__hypertension_1",
+    "cat__heart_disease_0",
+    "cat__heart_disease_1",
+    "cat__ever_married_No",
+    "cat__ever_married_Yes",
+    "cat__work_type_Govt_job",
+    "cat__work_type_Never_worked",
+    "cat__work_type_Private",
+    "cat__work_type_Self-employed",
+    "cat__work_type_children",
+    "cat__residence_type_Rural",
+    "cat__residence_type_Urban",
+    "cat__smoking_status_Unknown",
+    "cat__smoking_status_formerly smoked",
+    "cat__smoking_status_never smoked",
+    "cat__smoking_status_smokes"
+  ],
+  "training_sample_count": 4087,
+  "test_sample_count": 1022,
+  "evaluated_at": "2026-09-27T17:45:33.408829"
+}

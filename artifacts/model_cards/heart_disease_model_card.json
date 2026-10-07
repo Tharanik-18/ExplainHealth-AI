@@ -1,0 +1,202 @@
+{
+  "model_details": {
+    "model_name": "ExplainHealth-Heart_disease-Classifier",
+    "version": "1.0.0",
+    "model_type": "random_forest",
+    "architecture": "RandomForestClassifier",
+    "release_date": "2026-09-27",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  "intended_use": {
+    "primary_intended_use": "Provide educational decision-support risk estimates for Coronary Heart Disease Risk using structured patient clinical measurements.",
+    "out_of_scope_use": "Direct diagnostic substitution, prescribing therapy, acute emergency triage without clinician oversight.",
+    "target_users": "Patients, medical students, clinical researchers, educational users."
+  },
+  "data": {
+    "dataset_name": "UCI Heart Disease (Cleveland Clinic Dataset)",
+    "source": "UCI Machine Learning Repository - Cleveland Clinic Foundation",
+    "total_records": 303,
+    "training_samples": 241,
+    "test_samples": 61,
+    "features_used": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "known_limitations": "Sample size is ~303 patients; predominantly male demographic in Cleveland clinic (1988)."
+  },
+  "evaluation_results": {
+    "accuracy": 0.7869,
+    "recall_sensitivity": 0.8788,
+    "specificity": 0.6786,
+    "precision": 0.7632,
+    "f1_score": 0.8169,
+    "roc_auc": 0.9058,
+    "pr_auc": 0.9286,
+    "brier_score": 0.1295,
+    "calibrated_brier_score": 0.1295
+  },
+  "explainability": {
+    "method": "SHAP (SHapley Additive exPlanations) + LIME + Counterfactual Optimization",
+    "interpretability_level": "Local feature attribution, global importance waterfall, actionable what-if changes."
+  },
+  "ethical_considerations": {
+    "fairness_and_bias": "Sample size is ~303 patients; predominantly male demographic in Cleveland clinic (1988).",
+    "safety_recommendation": "Educational risk estimate only. Real clinical diagnosis requires comprehensive physician consultation."
+  },
+  "training_distribution_summary": {
+    "age": {
+      "type": "numerical",
+      "min": 29.0,
+      "max": 77.0,
+      "mean": 54.3402489626556,
+      "std": 9.22047079082332,
+      "median": 56.0,
+      "q25": 47.0,
+      "q75": 61.0,
+      "iqr": 14.0
+    },
+    "sex": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6846473029045643,
+      "std": 0.4656232159730785,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "iqr": 1.0
+    },
+    "cp": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.9377593360995851,
+      "std": 1.0042957525083056,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 2.0,
+      "iqr": 2.0
+    },
+    "trestbps": {
+      "type": "numerical",
+      "min": 94.0,
+      "max": 200.0,
+      "mean": 131.448132780083,
+      "std": 17.988376068514246,
+      "median": 130.0,
+      "q25": 120.0,
+      "q75": 140.0,
+      "iqr": 20.0
+    },
+    "chol": {
+      "type": "numerical",
+      "min": 126.0,
+      "max": 409.0,
+      "mean": 244.298755186722,
+      "std": 48.10615386944429,
+      "median": 240.0,
+      "q25": 211.0,
+      "q75": 273.0,
+      "iqr": 62.0
+    },
+    "fbs": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.14107883817427386,
+      "std": 0.34882731820388047,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0,
+      "iqr": 0.0
+    },
+    "restecg": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 0.5518672199170125,
+      "std": 0.5307292928565267,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "iqr": 1.0
+    },
+    "thalach": {
+      "type": "numerical",
+      "min": 88.0,
+      "max": 202.0,
+      "mean": 150.07053941908714,
+      "std": 22.08730789671936,
+      "median": 152.0,
+      "q25": 136.0,
+      "q75": 168.0,
+      "iqr": 32.0
+    },
+    "exang": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.34024896265560167,
+      "std": 0.4747788303613969,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "iqr": 1.0
+    },
+    "oldpeak": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 6.2,
+      "mean": 1.0709543568464732,
+      "std": 1.2062626173742965,
+      "median": 0.8,
+      "q25": 0.0,
+      "q75": 1.8,
+      "iqr": 1.8
+    },
+    "slope": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 1.3983402489626555,
+      "std": 0.6250311195572087,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "ca": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 0.7302904564315352,
+      "std": 1.0236146729198807,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "iqr": 1.0
+    },
+    "thal": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 2.3443983402489628,
+      "std": 0.6000518649782703,
+      "median": 2.0,
+      "q25": 2.0,
+      "q75": 3.0,
+      "iqr": 1.0
+    }
+  }
+}

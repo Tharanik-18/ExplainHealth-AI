@@ -1,0 +1,438 @@
+{
+  "disease": "breast_cancer",
+  "selected_model": "logistic_regression",
+  "calibration_method": "raw",
+  "brier_improvement": 0.0,
+  "test_metrics_raw": {
+    "accuracy": 0.9737,
+    "precision": 0.9756,
+    "recall": 0.9524,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "f1": 0.9639,
+    "roc_auc": 0.9954,
+    "pr_auc": 0.9931,
+    "brier_score": 0.0222,
+    "confusion_matrix": {
+      "tn": 71,
+      "fp": 1,
+      "fn": 2,
+      "tp": 40
+    },
+    "calibration_curve": [
+      {
+        "expected": 0.01484791936138066,
+        "observed": 0.014925373134328358
+      },
+      {
+        "expected": 0.15724004707778028,
+        "observed": 0.0
+      },
+      {
+        "expected": 0.28429792812518895,
+        "observed": 0.25
+      },
+      {
+        "expected": 0.563301309338973,
+        "observed": 1.0
+      },
+      {
+        "expected": 0.6624819677723948,
+        "observed": 0.5
+      },
+      {
+        "expected": 0.8224189044659871,
+        "observed": 1.0
+      },
+      {
+        "expected": 0.9852655599421405,
+        "observed": 1.0
+      }
+    ],
+    "cv_performance": {
+      "mean_recall": 0.95884,
+      "mean_roc_auc": 0.99534,
+      "mean_f1": 0.9616199999999999
+    },
+    "selection_score": 0.9723
+  },
+  "test_metrics_calibrated": {
+    "accuracy": 0.9737,
+    "precision": 0.9756,
+    "recall": 0.9524,
+    "sensitivity": 0.9524,
+    "specificity": 0.9861,
+    "f1": 0.9639,
+    "roc_auc": 0.9954,
+    "pr_auc": 0.9931,
+    "brier_score": 0.0222,
+    "confusion_matrix": {
+      "tn": 71,
+      "fp": 1,
+      "fn": 2,
+      "tp": 40
+    },
+    "calibration_curve": [
+      {
+        "expected": 0.01484791936138066,
+        "observed": 0.014925373134328358
+      },
+      {
+        "expected": 0.15724004707778028,
+        "observed": 0.0
+      },
+      {
+        "expected": 0.28429792812518895,
+        "observed": 0.25
+      },
+      {
+        "expected": 0.563301309338973,
+        "observed": 1.0
+      },
+      {
+        "expected": 0.6624819677723948,
+        "observed": 0.5
+      },
+      {
+        "expected": 0.8224189044659871,
+        "observed": 1.0
+      },
+      {
+        "expected": 0.9852655599421405,
+        "observed": 1.0
+      }
+    ]
+  },
+  "all_models_comparison": {
+    "logistic_regression": {
+      "accuracy": 0.9737,
+      "precision": 0.9756,
+      "recall": 0.9524,
+      "sensitivity": 0.9524,
+      "specificity": 0.9861,
+      "f1": 0.9639,
+      "roc_auc": 0.9954,
+      "pr_auc": 0.9931,
+      "brier_score": 0.0222,
+      "confusion_matrix": {
+        "tn": 71,
+        "fp": 1,
+        "fn": 2,
+        "tp": 40
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.01484791936138066,
+          "observed": 0.014925373134328358
+        },
+        {
+          "expected": 0.15724004707778028,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.28429792812518895,
+          "observed": 0.25
+        },
+        {
+          "expected": 0.563301309338973,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.6624819677723948,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.8224189044659871,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.9852655599421405,
+          "observed": 1.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.95884,
+        "mean_roc_auc": 0.99534,
+        "mean_f1": 0.9616199999999999
+      },
+      "selection_score": 0.9723
+    },
+    "decision_tree": {
+      "accuracy": 0.9298,
+      "precision": 0.925,
+      "recall": 0.881,
+      "sensitivity": 0.881,
+      "specificity": 0.9583,
+      "f1": 0.9024,
+      "roc_auc": 0.8988,
+      "pr_auc": 0.8586,
+      "brier_score": 0.0703,
+      "confusion_matrix": {
+        "tn": 69,
+        "fp": 3,
+        "fn": 5,
+        "tp": 37
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.006204965573326958,
+          "observed": 0.0684931506849315
+        },
+        {
+          "expected": 0.21839080459770116,
+          "observed": 0.0
+        },
+        {
+          "expected": 1.0,
+          "observed": 0.925
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.92354,
+        "mean_roc_auc": 0.9191,
+        "mean_f1": 0.89638
+      },
+      "selection_score": 0.8964
+    },
+    "random_forest": {
+      "accuracy": 0.9649,
+      "precision": 0.975,
+      "recall": 0.9286,
+      "sensitivity": 0.9286,
+      "specificity": 0.9861,
+      "f1": 0.9512,
+      "roc_auc": 0.9967,
+      "pr_auc": 0.9948,
+      "brier_score": 0.0281,
+      "confusion_matrix": {
+        "tn": 71,
+        "fp": 1,
+        "fn": 3,
+        "tp": 39
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.022203672430754245,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.17303856297855694,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.27183653119937423,
+          "observed": 0.4
+        },
+        {
+          "expected": 0.39098590904085373,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.5728499341291884,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.669512606591836,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.8252033604785868,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.9777535812471542,
+          "observed": 1.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.95884,
+        "mean_roc_auc": 0.99,
+        "mean_f1": 0.94788
+      },
+      "selection_score": 0.9613
+    },
+    "gradient_boosting": {
+      "accuracy": 0.9561,
+      "precision": 0.9744,
+      "recall": 0.9048,
+      "sensitivity": 0.9048,
+      "specificity": 0.9861,
+      "f1": 0.9383,
+      "roc_auc": 0.9964,
+      "pr_auc": 0.9939,
+      "brier_score": 0.0387,
+      "confusion_matrix": {
+        "tn": 71,
+        "fp": 1,
+        "fn": 4,
+        "tp": 38
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.003824179707464528,
+          "observed": 0.05333333333333334
+        },
+        {
+          "expected": 0.7244518473627655,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.759682718882198,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.99609156739779,
+          "observed": 1.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.9411800000000001,
+        "mean_roc_auc": 0.98628,
+        "mean_f1": 0.9407400000000001
+      },
+      "selection_score": 0.9492
+    },
+    "xgboost": {
+      "accuracy": 0.9649,
+      "precision": 1.0,
+      "recall": 0.9048,
+      "sensitivity": 0.9048,
+      "specificity": 1.0,
+      "f1": 0.95,
+      "roc_auc": 0.9947,
+      "pr_auc": 0.9934,
+      "brier_score": 0.02,
+      "confusion_matrix": {
+        "tn": 72,
+        "fp": 0,
+        "fn": 4,
+        "tp": 38
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.010065213921027154,
+          "observed": 0.013888888888888888
+        },
+        {
+          "expected": 0.1400459259748459,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.3443598747253418,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.4265174865722656,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.837404727935791,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.9921192112896178,
+          "observed": 1.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.94708,
+        "mean_roc_auc": 0.9919399999999999,
+        "mean_f1": 0.9498800000000001
+      },
+      "selection_score": 0.9528
+    },
+    "lightgbm": {
+      "accuracy": 0.9649,
+      "precision": 1.0,
+      "recall": 0.9048,
+      "sensitivity": 0.9048,
+      "specificity": 1.0,
+      "f1": 0.95,
+      "roc_auc": 0.995,
+      "pr_auc": 0.9937,
+      "brier_score": 0.0178,
+      "confusion_matrix": {
+        "tn": 72,
+        "fp": 0,
+        "fn": 4,
+        "tp": 38
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.005041322612928396,
+          "observed": 0.0136986301369863
+        },
+        {
+          "expected": 0.360572327347096,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.45784054541520014,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.9934517766259986,
+          "observed": 1.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.94708,
+        "mean_roc_auc": 0.9942399999999999,
+        "mean_f1": 0.9580200000000001
+      },
+      "selection_score": 0.9531
+    }
+  },
+  "feature_importances": {
+    "num__worst_texture": 1.4662,
+    "num__radius_error": 1.309,
+    "num__worst_symmetry": 1.0769,
+    "num__mean_concave_points": 0.97,
+    "num__compactness_error": 0.9608,
+    "num__worst_concavity": 0.9369,
+    "num__area_error": 0.9353,
+    "num__worst_area": 0.9054,
+    "num__worst_radius": 0.9017,
+    "num__perimeter_error": 0.7723,
+    "num__mean_concavity": 0.7689,
+    "num__worst_concave_points": 0.7427,
+    "num__worst_perimeter": 0.7123,
+    "num__fractal_dimension_error": 0.5874,
+    "num__concave_points_error": 0.5677
+  },
+  "transformed_feature_names": [
+    "num__mean_radius",
+    "num__mean_texture",
+    "num__mean_perimeter",
+    "num__mean_area",
+    "num__mean_smoothness",
+    "num__mean_compactness",
+    "num__mean_concavity",
+    "num__mean_concave_points",
+    "num__mean_symmetry",
+    "num__mean_fractal_dimension",
+    "num__radius_error",
+    "num__texture_error",
+    "num__perimeter_error",
+    "num__area_error",
+    "num__smoothness_error",
+    "num__compactness_error",
+    "num__concavity_error",
+    "num__concave_points_error",
+    "num__symmetry_error",
+    "num__fractal_dimension_error",
+    "num__worst_radius",
+    "num__worst_texture",
+    "num__worst_perimeter",
+    "num__worst_area",
+    "num__worst_smoothness",
+    "num__worst_compactness",
+    "num__worst_concavity",
+    "num__worst_concave_points",
+    "num__worst_symmetry",
+    "num__worst_fractal_dimension"
+  ],
+  "training_sample_count": 455,
+  "test_sample_count": 114,
+  "evaluated_at": "2026-09-27T17:45:06.692720"
+}

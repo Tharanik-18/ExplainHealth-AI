@@ -1,0 +1,502 @@
+{
+  "disease": "heart_disease",
+  "selected_model": "random_forest",
+  "calibration_method": "raw",
+  "brier_improvement": 0.0,
+  "test_metrics_raw": {
+    "accuracy": 0.7869,
+    "precision": 0.7632,
+    "recall": 0.8788,
+    "sensitivity": 0.8788,
+    "specificity": 0.6786,
+    "f1": 0.8169,
+    "roc_auc": 0.9058,
+    "pr_auc": 0.9286,
+    "brier_score": 0.1295,
+    "confusion_matrix": {
+      "tn": 19,
+      "fp": 9,
+      "fn": 4,
+      "tp": 29
+    },
+    "calibration_curve": [
+      {
+        "expected": 0.06503541963391526,
+        "observed": 0.0
+      },
+      {
+        "expected": 0.18378285559684474,
+        "observed": 0.0
+      },
+      {
+        "expected": 0.32625124089510077,
+        "observed": 0.6666666666666666
+      },
+      {
+        "expected": 0.4517433445585723,
+        "observed": 0.3333333333333333
+      },
+      {
+        "expected": 0.5617170611326584,
+        "observed": 0.42857142857142855
+      },
+      {
+        "expected": 0.6729320893263269,
+        "observed": 0.5
+      },
+      {
+        "expected": 0.8100339068004582,
+        "observed": 0.9333333333333333
+      },
+      {
+        "expected": 0.9301917202988107,
+        "observed": 1.0
+      }
+    ],
+    "cv_performance": {
+      "mean_recall": 0.8393,
+      "mean_roc_auc": 0.90382,
+      "mean_f1": 0.8411799999999999
+    },
+    "selection_score": 0.875
+  },
+  "test_metrics_calibrated": {
+    "accuracy": 0.7869,
+    "precision": 0.7632,
+    "recall": 0.8788,
+    "sensitivity": 0.8788,
+    "specificity": 0.6786,
+    "f1": 0.8169,
+    "roc_auc": 0.9058,
+    "pr_auc": 0.9286,
+    "brier_score": 0.1295,
+    "confusion_matrix": {
+      "tn": 19,
+      "fp": 9,
+      "fn": 4,
+      "tp": 29
+    },
+    "calibration_curve": [
+      {
+        "expected": 0.06503541963391526,
+        "observed": 0.0
+      },
+      {
+        "expected": 0.18378285559684474,
+        "observed": 0.0
+      },
+      {
+        "expected": 0.32625124089510077,
+        "observed": 0.6666666666666666
+      },
+      {
+        "expected": 0.4517433445585723,
+        "observed": 0.3333333333333333
+      },
+      {
+        "expected": 0.5617170611326584,
+        "observed": 0.42857142857142855
+      },
+      {
+        "expected": 0.6729320893263269,
+        "observed": 0.5
+      },
+      {
+        "expected": 0.8100339068004582,
+        "observed": 0.9333333333333333
+      },
+      {
+        "expected": 0.9301917202988107,
+        "observed": 1.0
+      }
+    ]
+  },
+  "all_models_comparison": {
+    "logistic_regression": {
+      "accuracy": 0.8197,
+      "precision": 0.8438,
+      "recall": 0.8182,
+      "sensitivity": 0.8182,
+      "specificity": 0.8214,
+      "f1": 0.8308,
+      "roc_auc": 0.8983,
+      "pr_auc": 0.9139,
+      "brier_score": 0.1353,
+      "confusion_matrix": {
+        "tn": 23,
+        "fp": 5,
+        "fn": 6,
+        "tp": 27
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.0544440398014027,
+          "observed": 0.11764705882352941
+        },
+        {
+          "expected": 0.22319573335535672,
+          "observed": 0.3333333333333333
+        },
+        {
+          "expected": 0.3225582371804824,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.44768176714338176,
+          "observed": 0.6
+        },
+        {
+          "expected": 0.6007211287098077,
+          "observed": 0.75
+        },
+        {
+          "expected": 0.6930072904244309,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.8382667787505849,
+          "observed": 0.25
+        },
+        {
+          "expected": 0.9483736797404307,
+          "observed": 0.9444444444444444
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.8470000000000001,
+        "mean_roc_auc": 0.9077399999999999,
+        "mean_f1": 0.85322
+      },
+      "selection_score": 0.8534
+    },
+    "decision_tree": {
+      "accuracy": 0.6721,
+      "precision": 0.6667,
+      "recall": 0.7879,
+      "sensitivity": 0.7879,
+      "specificity": 0.5357,
+      "f1": 0.7222,
+      "roc_auc": 0.7165,
+      "pr_auc": 0.6884,
+      "brier_score": 0.279,
+      "confusion_matrix": {
+        "tn": 15,
+        "fp": 13,
+        "fn": 7,
+        "tp": 26
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.030336458907887474,
+          "observed": 0.2222222222222222
+        },
+        {
+          "expected": 0.17350157728706625,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.45643153526970953,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.5019011406844106,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.6267806267806267,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.8076358296622612,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.9869065467266367,
+          "observed": 0.6571428571428571
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.8008600000000001,
+        "mean_roc_auc": 0.7771600000000001,
+        "mean_f1": 0.79622
+      },
+      "selection_score": 0.7431
+    },
+    "random_forest": {
+      "accuracy": 0.7869,
+      "precision": 0.7632,
+      "recall": 0.8788,
+      "sensitivity": 0.8788,
+      "specificity": 0.6786,
+      "f1": 0.8169,
+      "roc_auc": 0.9058,
+      "pr_auc": 0.9286,
+      "brier_score": 0.1295,
+      "confusion_matrix": {
+        "tn": 19,
+        "fp": 9,
+        "fn": 4,
+        "tp": 29
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.06503541963391526,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.18378285559684474,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.32625124089510077,
+          "observed": 0.6666666666666666
+        },
+        {
+          "expected": 0.4517433445585723,
+          "observed": 0.3333333333333333
+        },
+        {
+          "expected": 0.5617170611326584,
+          "observed": 0.42857142857142855
+        },
+        {
+          "expected": 0.6729320893263269,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.8100339068004582,
+          "observed": 0.9333333333333333
+        },
+        {
+          "expected": 0.9301917202988107,
+          "observed": 1.0
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.8393,
+        "mean_roc_auc": 0.90382,
+        "mean_f1": 0.8411799999999999
+      },
+      "selection_score": 0.875
+    },
+    "gradient_boosting": {
+      "accuracy": 0.7705,
+      "precision": 0.7568,
+      "recall": 0.8485,
+      "sensitivity": 0.8485,
+      "specificity": 0.6786,
+      "f1": 0.8,
+      "roc_auc": 0.8604,
+      "pr_auc": 0.8878,
+      "brier_score": 0.1827,
+      "confusion_matrix": {
+        "tn": 19,
+        "fp": 9,
+        "fn": 5,
+        "tp": 28
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.03484034878222806,
+          "observed": 0.13333333333333333
+        },
+        {
+          "expected": 0.19738086606328054,
+          "observed": 0.6
+        },
+        {
+          "expected": 0.2812525147053957,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.3914395673023971,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.6925093836338032,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.8183962970066028,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.9755980239686428,
+          "observed": 0.8518518518518519
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.82394,
+        "mean_roc_auc": 0.87072,
+        "mean_f1": 0.83468
+      },
+      "selection_score": 0.8398
+    },
+    "xgboost": {
+      "accuracy": 0.7377,
+      "precision": 0.7297,
+      "recall": 0.8182,
+      "sensitivity": 0.8182,
+      "specificity": 0.6429,
+      "f1": 0.7714,
+      "roc_auc": 0.8517,
+      "pr_auc": 0.8666,
+      "brier_score": 0.174,
+      "confusion_matrix": {
+        "tn": 18,
+        "fp": 10,
+        "fn": 6,
+        "tp": 27
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.03523945217602886,
+          "observed": 0.0625
+        },
+        {
+          "expected": 0.1936604455113411,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.3601513206958771,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.4158059358596802,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.5623654921849569,
+          "observed": 0.0
+        },
+        {
+          "expected": 0.6746771097183227,
+          "observed": 0.8
+        },
+        {
+          "expected": 0.8388091921806335,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.9557796859741211,
+          "observed": 0.84
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.8316400000000002,
+        "mean_roc_auc": 0.8846599999999999,
+        "mean_f1": 0.8261200000000001
+      },
+      "selection_score": 0.8213
+    },
+    "lightgbm": {
+      "accuracy": 0.7705,
+      "precision": 0.7714,
+      "recall": 0.8182,
+      "sensitivity": 0.8182,
+      "specificity": 0.7143,
+      "f1": 0.7941,
+      "roc_auc": 0.8615,
+      "pr_auc": 0.883,
+      "brier_score": 0.173,
+      "confusion_matrix": {
+        "tn": 20,
+        "fp": 8,
+        "fn": 6,
+        "tp": 27
+      },
+      "calibration_curve": [
+        {
+          "expected": 0.0405565113770611,
+          "observed": 0.125
+        },
+        {
+          "expected": 0.2003142638756333,
+          "observed": 0.3333333333333333
+        },
+        {
+          "expected": 0.30879176779950784,
+          "observed": 0.3333333333333333
+        },
+        {
+          "expected": 0.44142741801515567,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.6169000067922585,
+          "observed": 0.5
+        },
+        {
+          "expected": 0.6686605292381931,
+          "observed": 1.0
+        },
+        {
+          "expected": 0.8303204237426354,
+          "observed": 0.2
+        },
+        {
+          "expected": 0.9618659792157037,
+          "observed": 0.875
+        }
+      ],
+      "cv_performance": {
+        "mean_recall": 0.8321799999999999,
+        "mean_roc_auc": 0.89348,
+        "mean_f1": 0.8356999999999999
+      },
+      "selection_score": 0.8294
+    }
+  },
+  "feature_importances": {
+    "cat__thal_2": 0.116,
+    "cat__cp_0": 0.1154,
+    "num__thalach": 0.0933,
+    "num__oldpeak": 0.0865,
+    "cat__ca_0": 0.0757,
+    "num__chol": 0.0604,
+    "cat__thal_3": 0.0604,
+    "num__age": 0.0596,
+    "num__trestbps": 0.046,
+    "cat__exang_0": 0.0411,
+    "cat__exang_1": 0.039,
+    "cat__slope_2": 0.0286,
+    "cat__slope_1": 0.0214,
+    "cat__cp_2": 0.0207,
+    "cat__sex_1": 0.0201
+  },
+  "transformed_feature_names": [
+    "num__age",
+    "num__trestbps",
+    "num__chol",
+    "num__thalach",
+    "num__oldpeak",
+    "cat__sex_0",
+    "cat__sex_1",
+    "cat__cp_0",
+    "cat__cp_1",
+    "cat__cp_2",
+    "cat__cp_3",
+    "cat__fbs_0",
+    "cat__fbs_1",
+    "cat__restecg_0",
+    "cat__restecg_1",
+    "cat__restecg_2",
+    "cat__exang_0",
+    "cat__exang_1",
+    "cat__slope_0",
+    "cat__slope_1",
+    "cat__slope_2",
+    "cat__ca_0",
+    "cat__ca_1",
+    "cat__ca_2",
+    "cat__ca_3",
+    "cat__ca_4",
+    "cat__thal_0",
+    "cat__thal_1",
+    "cat__thal_2",
+    "cat__thal_3"
+  ],
+  "training_sample_count": 241,
+  "test_sample_count": 61,
+  "evaluated_at": "2026-09-27T17:44:53.010014"
+}

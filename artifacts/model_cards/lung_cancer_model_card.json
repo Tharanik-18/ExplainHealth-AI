@@ -1,0 +1,226 @@
+{
+  "model_details": {
+    "model_name": "ExplainHealth-Lung_cancer-Classifier",
+    "version": "1.0.0",
+    "model_type": "random_forest",
+    "architecture": "RandomForestClassifier",
+    "release_date": "2026-09-27",
+    "license": "Open Data Commons Open Database License (ODbL) / Public Academic Use"
+  },
+  "intended_use": {
+    "primary_intended_use": "Provide educational decision-support risk estimates for Lung Cancer Symptom Risk Profile using structured patient clinical measurements.",
+    "out_of_scope_use": "Direct diagnostic substitution, prescribing therapy, acute emergency triage without clinician oversight.",
+    "target_users": "Patients, medical students, clinical researchers, educational users."
+  },
+  "data": {
+    "dataset_name": "Survey Lung Cancer Dataset",
+    "source": "Public Epidemiological Research / Kaggle Public Survey Benchmark",
+    "total_records": 309,
+    "training_samples": 220,
+    "test_samples": 56,
+    "features_used": [
+      "gender",
+      "age",
+      "smoking",
+      "yellow_fingers",
+      "anxiety",
+      "peer_pressure",
+      "chronic_disease",
+      "fatigue",
+      "allergy",
+      "wheezing",
+      "alcohol_consuming",
+      "coughing",
+      "shortness_of_breath",
+      "swallowing_difficulty",
+      "chest_pain"
+    ],
+    "known_limitations": "Survey-based symptom assessments; categorical ratings 1 (No) and 2 (Yes)."
+  },
+  "evaluation_results": {
+    "accuracy": 0.9464,
+    "recall_sensitivity": 0.9375,
+    "specificity": 1.0,
+    "precision": 1.0,
+    "f1_score": 0.9677,
+    "roc_auc": 0.9635,
+    "pr_auc": 0.9945,
+    "brier_score": 0.0571,
+    "calibrated_brier_score": 0.0571
+  },
+  "explainability": {
+    "method": "SHAP (SHapley Additive exPlanations) + LIME + Counterfactual Optimization",
+    "interpretability_level": "Local feature attribution, global importance waterfall, actionable what-if changes."
+  },
+  "ethical_considerations": {
+    "fairness_and_bias": "Survey-based symptom assessments; categorical ratings 1 (No) and 2 (Yes).",
+    "safety_recommendation": "Educational risk estimate only. Real clinical diagnosis requires comprehensive physician consultation."
+  },
+  "training_distribution_summary": {
+    "gender": {
+      "type": "categorical",
+      "categories": [
+        "F",
+        "M"
+      ],
+      "frequencies": {
+        "M": 0.5272727272727272,
+        "F": 0.4727272727272727
+      }
+    },
+    "age": {
+      "type": "numerical",
+      "min": 38.0,
+      "max": 87.0,
+      "mean": 63.38636363636363,
+      "std": 7.976609381106924,
+      "median": 63.0,
+      "q25": 58.0,
+      "q75": 69.25,
+      "iqr": 11.25
+    },
+    "smoking": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.559090909090909,
+      "std": 0.4976282477676873,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "yellow_fingers": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.6,
+      "std": 0.4910151631171475,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "anxiety": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.490909090909091,
+      "std": 0.5010574123896235,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "peer_pressure": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.481818181818182,
+      "std": 0.5008088103339383,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "chronic_disease": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.5272727272727273,
+      "std": 0.5003941991110044,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "fatigue": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.6590909090909092,
+      "std": 0.47509584796876586,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "allergy": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.5363636363636364,
+      "std": 0.49981316559103556,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "wheezing": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.5318181818181817,
+      "std": 0.5001245174966384,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "alcohol_consuming": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.5363636363636364,
+      "std": 0.49981316559103556,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "coughing": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.5863636363636364,
+      "std": 0.49360795874508356,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "shortness_of_breath": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.6590909090909092,
+      "std": 0.47509584796876586,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "swallowing_difficulty": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.4681818181818183,
+      "std": 0.5001245174966384,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    },
+    "chest_pain": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 2.0,
+      "mean": 1.5681818181818181,
+      "std": 0.4964590264711839,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 2.0,
+      "iqr": 1.0
+    }
+  }
+}

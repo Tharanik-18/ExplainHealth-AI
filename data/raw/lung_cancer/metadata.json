@@ -1,0 +1,50 @@
+{
+  "dataset_name": "Survey Lung Cancer Dataset",
+  "source": "Public Epidemiological Research / Kaggle Public Survey Benchmark",
+  "license": "Open Data Commons Open Database License (ODbL) / Public Academic Use",
+  "file_name": "lung_cancer.csv",
+  "target": "lung_cancer",
+  "positive_label_meaning": "Elevated Lung Cancer Risk Indicator",
+  "features": [
+    "gender",
+    "age",
+    "smoking",
+    "yellow_fingers",
+    "anxiety",
+    "peer_pressure",
+    "chronic_disease",
+    "fatigue",
+    "allergy",
+    "wheezing",
+    "alcohol_consuming",
+    "coughing",
+    "shortness_of_breath",
+    "swallowing_difficulty",
+    "chest_pain"
+  ],
+  "feature_descriptions": {
+    "gender": "Biological sex (M/F)",
+    "age": "Age in years",
+    "smoking": "Smoking habit (1 = No, 2 = Yes)",
+    "yellow_fingers": "Staining of fingers from smoking (1 = No, 2 = Yes)",
+    "anxiety": "History of anxiety symptoms (1 = No, 2 = Yes)",
+    "peer_pressure": "Exposure to social tobacco smoke peer pressure (1 = No, 2 = Yes)",
+    "chronic_disease": "Presence of chronic respiratory or pulmonary conditions (1 = No, 2 = Yes)",
+    "fatigue": "Persistent unexplained physical fatigue (1 = No, 2 = Yes)",
+    "allergy": "Known respiratory allergies (1 = No, 2 = Yes)",
+    "wheezing": "Wheezing breath sounds (1 = No, 2 = Yes)",
+    "alcohol_consuming": "Alcohol consumption habits (1 = No, 2 = Yes)",
+    "coughing": "Persistent coughing (1 = No, 2 = Yes)",
+    "shortness_of_breath": "Shortness of breath / dyspnea (1 = No, 2 = Yes)",
+    "swallowing_difficulty": "Dysphagia / swallowing difficulty (1 = No, 2 = Yes)",
+    "chest_pain": "Recurrent chest pain (1 = No, 2 = Yes)"
+  },
+  "description": "Self-reported lifestyle, occupational, and clinical symptoms associated with lung cancer risk.",
+  "known_limitations": "Survey-based symptom assessments; categorical ratings 1 (No) and 2 (Yes).",
+  "samples": 309,
+  "num_features": 15,
+  "class_distribution": {
+    "YES": 270,
+    "NO": 39
+  }
+}

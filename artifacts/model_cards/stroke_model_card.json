@@ -1,0 +1,176 @@
+{
+  "model_details": {
+    "model_name": "ExplainHealth-Stroke-Classifier",
+    "version": "1.0.0",
+    "model_type": "logistic_regression",
+    "architecture": "LogisticRegression",
+    "release_date": "2026-09-27",
+    "license": "CC0: Public Domain"
+  },
+  "intended_use": {
+    "primary_intended_use": "Provide educational decision-support risk estimates for Cerebrovascular Stroke Risk using structured patient clinical measurements.",
+    "out_of_scope_use": "Direct diagnostic substitution, prescribing therapy, acute emergency triage without clinician oversight.",
+    "target_users": "Patients, medical students, clinical researchers, educational users."
+  },
+  "data": {
+    "dataset_name": "Healthcare Stroke Prediction Dataset",
+    "source": "Public Healthcare Benchmark / Kaggle Open Health Dataset",
+    "total_records": 5110,
+    "training_samples": 4087,
+    "test_samples": 1022,
+    "features_used": [
+      "gender",
+      "age",
+      "hypertension",
+      "heart_disease",
+      "ever_married",
+      "work_type",
+      "residence_type",
+      "avg_glucose_level",
+      "bmi",
+      "smoking_status"
+    ],
+    "known_limitations": "Severe class imbalance (approx 4.8% stroke positive rate), typical of real-world stroke epidemiology."
+  },
+  "evaluation_results": {
+    "accuracy": 0.7387,
+    "recall_sensitivity": 0.8,
+    "specificity": 0.7356,
+    "precision": 0.1347,
+    "f1_score": 0.2305,
+    "roc_auc": 0.8393,
+    "pr_auc": 0.2591,
+    "brier_score": 0.1726,
+    "calibrated_brier_score": 0.1726
+  },
+  "explainability": {
+    "method": "SHAP (SHapley Additive exPlanations) + LIME + Counterfactual Optimization",
+    "interpretability_level": "Local feature attribution, global importance waterfall, actionable what-if changes."
+  },
+  "ethical_considerations": {
+    "fairness_and_bias": "Severe class imbalance (approx 4.8% stroke positive rate), typical of real-world stroke epidemiology.",
+    "safety_recommendation": "Educational risk estimate only. Real clinical diagnosis requires comprehensive physician consultation."
+  },
+  "training_distribution_summary": {
+    "gender": {
+      "type": "categorical",
+      "categories": [
+        "Female",
+        "Male"
+      ],
+      "frequencies": {
+        "Female": 0.5864937607046734,
+        "Male": 0.41350623929532665
+      }
+    },
+    "age": {
+      "type": "numerical",
+      "min": 0.08,
+      "max": 82.0,
+      "mean": 43.259368730119895,
+      "std": 22.642243304989904,
+      "median": 45.0,
+      "q25": 25.0,
+      "q75": 61.0,
+      "iqr": 36.0
+    },
+    "hypertension": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.09469048201614877,
+      "std": 0.2928227699664172,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0,
+      "iqr": 0.0
+    },
+    "heart_disease": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.05676535356006851,
+      "std": 0.23142202190104874,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.0,
+      "iqr": 0.0
+    },
+    "ever_married": {
+      "type": "categorical",
+      "categories": [
+        "Yes",
+        "No"
+      ],
+      "frequencies": {
+        "Yes": 0.6598972351357965,
+        "No": 0.3401027648642036
+      }
+    },
+    "work_type": {
+      "type": "categorical",
+      "categories": [
+        "Private",
+        "Govt_job",
+        "children",
+        "Self-employed",
+        "Never_worked"
+      ],
+      "frequencies": {
+        "Private": 0.5686322485931,
+        "Self-employed": 0.16246635674088575,
+        "children": 0.1357964276975777,
+        "Govt_job": 0.1291901149987766,
+        "Never_worked": 0.003914851969659897
+      }
+    },
+    "residence_type": {
+      "type": "categorical",
+      "categories": [
+        "Urban",
+        "Rural"
+      ],
+      "frequencies": {
+        "Urban": 0.5025691216050893,
+        "Rural": 0.4974308783949107
+      }
+    },
+    "avg_glucose_level": {
+      "type": "numerical",
+      "min": 55.22,
+      "max": 271.74,
+      "mean": 105.89508686077806,
+      "std": 44.676844781212374,
+      "median": 91.89,
+      "q25": 77.455,
+      "q75": 114.035,
+      "iqr": 36.58
+    },
+    "bmi": {
+      "type": "numerical",
+      "min": 10.3,
+      "max": 97.6,
+      "mean": 28.88195718654434,
+      "std": 7.895163233913341,
+      "median": 28.1,
+      "q25": 23.5,
+      "q75": 33.1,
+      "iqr": 9.600000000000001
+    },
+    "smoking_status": {
+      "type": "categorical",
+      "categories": [
+        "never smoked",
+        "Unknown",
+        "formerly smoked",
+        "smokes"
+      ],
+      "frequencies": {
+        "never smoked": 0.37191093711769024,
+        "Unknown": 0.30242231465622704,
+        "formerly smoked": 0.17494494739417665,
+        "smokes": 0.15072180083190603
+      }
+    }
+  }
+}

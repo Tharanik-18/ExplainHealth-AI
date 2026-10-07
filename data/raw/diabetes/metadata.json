@@ -1,0 +1,36 @@
+{
+  "dataset_name": "Pima Indians Diabetes Database",
+  "source": "National Institute of Diabetes and Digestive and Kidney Diseases / UCI Machine Learning Repository",
+  "license": "CC0: Public Domain",
+  "file_name": "diabetes.csv",
+  "target": "outcome",
+  "positive_label_meaning": "Presence of Diabetes (Type 2)",
+  "features": [
+    "pregnancies",
+    "glucose",
+    "blood_pressure",
+    "skin_thickness",
+    "insulin",
+    "bmi",
+    "diabetes_pedigree_function",
+    "age"
+  ],
+  "feature_descriptions": {
+    "pregnancies": "Number of times pregnant",
+    "glucose": "Plasma glucose concentration a 2 hours in an oral glucose tolerance test (mg/dL)",
+    "blood_pressure": "Diastolic blood pressure (mm Hg)",
+    "skin_thickness": "Triceps skin fold thickness (mm)",
+    "insulin": "2-Hour serum insulin (mu U/ml)",
+    "bmi": "Body mass index (weight in kg/(height in m)^2)",
+    "diabetes_pedigree_function": "Diabetes pedigree function (genetic score)",
+    "age": "Age in years"
+  },
+  "description": "Diagnostic measurements to predict whether or not a patient has diabetes based on diagnostic metabolic factors.",
+  "known_limitations": "All patients are females of Pima Indian heritage aged 21 and older. Zero values in glucose, blood pressure, skin thickness, insulin, and BMI represent missing medical measurements that require imputation.",
+  "samples": 768,
+  "num_features": 8,
+  "class_distribution": {
+    "0": 500,
+    "1": 268
+  }
+}

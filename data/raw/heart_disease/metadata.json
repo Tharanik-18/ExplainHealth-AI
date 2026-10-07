@@ -1,0 +1,46 @@
+{
+  "dataset_name": "UCI Heart Disease (Cleveland Clinic Dataset)",
+  "source": "UCI Machine Learning Repository - Cleveland Clinic Foundation",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "file_name": "heart.csv",
+  "target": "target",
+  "positive_label_meaning": "Presence of Heart Disease (> 50% diameter narrowing)",
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "feature_descriptions": {
+    "age": "Age in years",
+    "sex": "Sex (1 = male; 0 = female)",
+    "cp": "Chest pain type (0: typical angina, 1: atypical angina, 2: non-anginal pain, 3: asymptomatic)",
+    "trestbps": "Resting blood pressure in mm Hg on admission to the hospital",
+    "chol": "Serum cholesterol in mg/dl",
+    "fbs": "Fasting blood sugar > 120 mg/dl (1 = true; 0 = false)",
+    "restecg": "Resting electrocardiographic results (0: normal, 1: ST-T wave abnormality, 2: probable or definite left ventricular hypertrophy)",
+    "thalach": "Maximum heart rate achieved during exercise stress test",
+    "exang": "Exercise induced angina (1 = yes; 0 = no)",
+    "oldpeak": "ST depression induced by exercise relative to rest",
+    "slope": "The slope of the peak exercise ST segment (0: upsloping, 1: flat, 2: downsloping)",
+    "ca": "Number of major vessels (0-3) colored by fluoroscopy",
+    "thal": "Thalassemia blood disorder (1: normal, 2: fixed defect, 3: reversible defect)"
+  },
+  "description": "14 clinical attributes used to predict presence of heart disease in patient.",
+  "known_limitations": "Sample size is ~303 patients; predominantly male demographic in Cleveland clinic (1988).",
+  "samples": 303,
+  "num_features": 13,
+  "class_distribution": {
+    "1": 165,
+    "0": 138
+  }
+}
